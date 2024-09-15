@@ -1,9 +1,7 @@
-// quick sort algorithm on a given array
-
 #include<iostream>
 using namespace std;
 
-int divideArray (int arr[], int lb, int ub)   // lb= lower bound and ub= upper bound
+int divideArray (int arr[], int lb, int ub)
 {
 	int pivot= arr[lb];
 	int i = lb;
@@ -42,8 +40,7 @@ int main()
 	int n= sizeof(arr)/sizeof(arr[0]);
 	cout<< "Original Array: ";
 	printArray(arr,n);
-	
-	// Sorted array
+
 	quickSort(arr, 0, n-1);
 	cout<<"Sorted Array: ";
 	printArray(arr, n);
